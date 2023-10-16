@@ -44,7 +44,7 @@ int print_int(va_list args)
 }
 #include "main.h"
 /**
- * printf_dec - prints decimal
+ * print_dec - prints decimal
  * @args: argument to print
  * Return: number of characters printed
  */
@@ -84,5 +84,5 @@ int print_dec(va_list args)
 	}
 	_putchar(last + '0');
 
-	return(i);
+	return (i);
 }
