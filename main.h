@@ -27,6 +27,5 @@ int print_percentage(void);
 
 /** string length */
 int _stringlen(char *str);
-int _stringlength(const char *str);
 
 #endif
