@@ -15,7 +15,9 @@ int _printf(const char *format, ...)
 	specifier form[] = {
 		{"%c", print_character},
 		{"%s", print_string},
-		{"%%", print_percentage}
+		{"%%", print_percentage},
+		{"%d", print_decimal},
+		{"%i", print_integer}
 	};
 /** n = the number of arguments in the variable form[] */
 
@@ -33,7 +35,7 @@ int _printf(const char *format, ...)
 here:
 	while (format[i] != '\0')
 	{
-		n = 2;
+		n = 4;
 		while (n >= 0)
 		{
 		if (form[n].str[0] == format[i] && form[n].str[1] == format[i + 1])
